@@ -325,7 +325,7 @@ h1{
     font-size: 14px;
     color: darkgrey;
   }
-  .card{
+  .cardLeft{
     position: relative;
     margin: 5rem;
     background-color: #fff;
@@ -335,11 +335,11 @@ h1{
     border-radius: 15px;
     transition: all 0.4s ease-in-out;
   }
-  .card:hover{
+  .cardLeft:hover{
     width: 800px;
     height: 300px;
   }
-  .pb{
+  .pbLeft{
     position: absolute;
     top: -45px;
     left: 50%;
@@ -354,14 +354,14 @@ h1{
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
     transition: all 0.4s ease-in-out;
   }
-  .card:hover .pb{
+  .cardLeft:hover .pbLeft{
     transform:translateX(-24rem);
     height: 250px;  
     width: 250px;
     display: inline-block;
     
   }
-  .info{
+  .infoLeft{
     margin-top: 8rem;
     display: flex;
     flex-direction: column;
@@ -369,14 +369,14 @@ h1{
     justify-items: center;
     transition: all 0.4s ease-in-out;
   }
-  .card:hover .info{
+  .cardLeft:hover .infoLeft{
     display: flex;
     margin: 0;
     justify-content: end;
     margin-left: 18rem;
     margin-top: 3rem;
   }
-  .detail{
+  .detailLeft{
     position: relative;
     display: flex;
     opacity: 0;
@@ -389,12 +389,12 @@ h1{
     transition-property: z-index, opacity, transform;
     transition-delay: 0.2s, 0s, 0s;
   }
-  .description{
+  .descriptionLeft{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .card:hover .detail{
+  .cardLeft:hover .detailLeft{
     opacity: 1;
     z-index: 0;
     margin-left: 20rem;
@@ -403,4 +403,167 @@ h1{
     transition-duration: 0s, 0.3s, 0.3s;
     transition-property: z-index, opacity, transform;
     transition-delay: 0s, 0.2s, 0.2s;
+  }
+
+
+
+  .cardRight{
+    position: relative;
+    margin: 5rem;
+    background-color: #fff;
+    width: 350px;
+    height: 200px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+  }
+  .cardRight:hover{
+    width: 800px;
+    height: 300px;
+  }
+  .pbRight{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-image: url('photo.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    transition: all 0.4s ease-in-out;
+  }
+  .cardRight:hover .pbRight{
+    transform:translateX(8rem);
+    height: 250px;  
+    width: 250px;
+    display: inline-block;
+    
+  }
+  .infoRight{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    transition: all 0.4s ease-in-out;
+  }
+  .cardRight:hover .infoRight{
+    display: flex;
+    margin: 0;
+    justify-content: end;
+    margin-right: 18rem;
+    margin-top: 3rem;
+  }
+  .detailRight{
+    position: relative;
+    display: flex;
+    opacity: 0;
+    z-index: -10;
+    justify-content: space-between;
+    padding: 10px 50px;
+    transform: translateX(40px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.2s, 0.2s;
+    transition-property: z-index, opacity, transform;
+    transition-delay: 0.2s, 0s, 0s;
+  }
+  .descriptionRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardRight:hover .detailRight{
+    opacity: 1;
+    z-index: 0;
+    margin-right: 15rem;
+    transform: translateX(0px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.3s, 0.3s;
+    transition-property: z-index, opacity, transform;
+    transition-delay: 0s, 0.2s, 0.2s;
+  }
+
+
+
+
+  .cardMid{
+    position: relative;
+    margin: 5rem;
+    background-color: #fff;
+    width: 350px;
+    height: 200px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+  }
+  .cardMid:hover{
+    width: 600px;
+    height: 500px;
+  }
+  .pbMid{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-image: url('photo.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    transition: all 0.4s ease-in-out;
+  }
+  .cardMid:hover .pbMid{
+    height: 250px;  
+    width: 250px;
+    display: inline-block;
+    
+  }
+  .infoMid{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    transition: all 0.4s ease-in-out;
+  }
+  .cardMid:hover .infoMid{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    margin-top: 15rem;
+  }
+  .detailMid{
+    position: relative;
+    display: flex;
+    opacity: 0;
+    z-index: -10;
+    justify-content: space-between;
+    padding: 10px 50px;
+    transform: translateX(40px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.2s, 0.2s;
+    transition-property: z-index, opacity, transform;
+    transition-delay: 0.2s, 0s, 0s;
+  }
+  .descriptionMid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardMid:hover .detailMid{
+    opacity: 1;
+    z-index: 0;
+    transform: translateX(0px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.3s, 0.3s;
+    transition-property: z-index, opacity, transform;
+    transition-delay: 0s, 0.2s, 0.2s;
+    justify-content: center;
   }
